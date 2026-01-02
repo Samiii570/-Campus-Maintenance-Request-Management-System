@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.gluonhq.charm.glisten.control.TextField?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="319.0" prefWidth="602.0" style="-fx-background-color: #EEF7F5;" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1">
+   <left>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="314.0" fitWidth="357.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../../../Downloads/logo.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="113.0" layoutY="32.0" prefHeight="18.0" prefWidth="139.0" text="Welcome to" textFill="#1d8494">
+               <font>
+                  <Font name="Yu Gothic UI Bold" size="17.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </left>
+   <right>
+      <AnchorPane prefHeight="319.0" prefWidth="290.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="69.0" fitWidth="80.0" layoutX="104.0" layoutY="80.0">
+               <image>
+                  <Image url="@../../../../../../../../Downloads/images%20(1).png" />
+               </image>
+            </ImageView>
+            <Label layoutX="28.0" layoutY="177.0" prefHeight="17.0" prefWidth="63.0" text="Username" textFill="#326da1">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <TextField layoutX="99.0" layoutY="174.0" prefHeight="27.0" prefWidth="167.0" promptText="Username">
+               <effect>
+                  <Lighting bumpInput="$null">
+                     <light>
+                        <Light.Distant />
+                     </light>
+                  </Lighting>
+               </effect>
+            </TextField>
+            <PasswordField blendMode="DIFFERENCE" layoutX="99.0" layoutY="203.0" prefHeight="25.0" prefWidth="167.0" promptText="Password">
+               <effect>
+                  <Lighting bumpInput="$null">
+                     <light>
+                        <Light.Distant />
+                     </light>
+                  </Lighting>
+               </effect>
+            </PasswordField>
+            <Label ellipsisString="" layoutX="30.0" layoutY="206.0" text="Password">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <Button layoutX="76.0" layoutY="256.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="132.0" text="LOGIN" textFill="#74075e">
+               <font>
+                  <Font name="Verdana Bold Italic" size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </right>
+</BorderPane>

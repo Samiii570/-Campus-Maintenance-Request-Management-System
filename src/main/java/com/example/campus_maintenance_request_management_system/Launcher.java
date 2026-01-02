@@ -13,7 +13,7 @@ public class Launcher extends Application {
     @Override
     public void start(Stage stage) {
         try {
-            // Load login.fxml from resources/fxml/
+
             Parent root = FXMLLoader.load(
                     getClass().getResource("/fxml/login.fxml")
             );
