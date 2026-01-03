@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane prefHeight="600" prefWidth="900" style="-fx-background-color:#EEF7F5;" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1">
+
+    <!-- TOP intentionally empty -->
+
+    <center>
+        <AnchorPane>
+            <children>
+                <VBox alignment="CENTER" spacing="30" AnchorPane.leftAnchor="40" AnchorPane.rightAnchor="40" AnchorPane.topAnchor="40">
+
+                    <Label text="Admin Dashboard" textFill="#056d9d">
+                        <font><Font name="System Bold" size="19.0" /></font>
+                    </Label>
+
+                    <GridPane alignment="CENTER" hgap="25" vgap="25">
+                        <columnConstraints>
+                            <ColumnConstraints percentWidth="50" />
+                            <ColumnConstraints percentWidth="50" />
+                        </columnConstraints>
+
+                        <!-- Total -->
+                        <VBox alignment="CENTER" spacing="10" style="-fx-background-color:white;                                      -fx-background-radius:14;                                      -fx-padding:25;">
+                            <Label text="Total Requests" textFill="#791010">
+                        <font>
+                           <Font name="Georgia" size="15.0" />
+                        </font></Label>
+                            <Label text="0" textFill="#2E7D6B">
+                                <font><Font size="30" /></font>
+                            </Label>
+                        </VBox>
+
+                        <!-- Pending -->
+                        <VBox alignment="CENTER" spacing="10" style="-fx-background-color:#FFF3E0;                                      -fx-background-radius:14;                                      -fx-padding:25;" GridPane.columnIndex="1">
+                            <Label text="Pending" textFill="#840606">
+                        <font>
+                           <Font name="Georgia" size="15.0" />
+                        </font></Label>
+                            <Label text="0" textFill="#2e7d36">
+                                <font><Font size="30" /></font>
+                            </Label>
+                        </VBox>
+
+                        <!-- In Progress -->
+                        <VBox alignment="CENTER" spacing="10" style="-fx-background-color:#E0F2F1;                                      -fx-background-radius:14;                                      -fx-padding:25;" GridPane.rowIndex="1">
+                            <Label text="In Progress" textFill="#8d0707">
+                        <font>
+                           <Font name="Georgia" size="15.0" />
+                        </font></Label>
+                            <Label text="0" textFill="#00695C">
+                                <font><Font size="30" /></font>
+                            </Label>
+                        </VBox>
+
+                        <!-- Completed -->
+                        <VBox alignment="CENTER" spacing="10" style="-fx-background-color:#E8F5E9;                                      -fx-background-radius:14;                                      -fx-padding:25;" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                            <Label text="Completed" textFill="#820505">
+                        <font>
+                           <Font name="Georgia" size="15.0" />
+                        </font></Label>
+                            <Label text="0" textFill="#2E7D32">
+                                <font><Font size="30" /></font>
+                            </Label>
+                        </VBox>
+                  <rowConstraints>
+                     <RowConstraints />
+                     <RowConstraints />
+                  </rowConstraints>
+                    </GridPane>
+
+                </VBox>
+            </children>
+        </AnchorPane>
+    </center>
+   <top>
+      <HBox prefHeight="139.0" prefWidth="900.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="140.0" fitWidth="190.0">
+               <image>
+                  <Image url="@../../../../../../Desktop/logo%20-%20Copy.png" />
+               </image>
+            </ImageView>
+            <Label alignment="CENTER" prefHeight="140.0" prefWidth="713.0" text="Campus Maintenance Request Management System" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+   </top>
+</BorderPane>
